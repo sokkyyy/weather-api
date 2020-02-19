@@ -1,0 +1,22 @@
+<div class="mainPage columns">
+  <div class="column has-text-centered">
+    <p class="is-size-1 has-text-white">{{weather.name}}</p>
+    <div class="weatherIcon">
+      <figure class="image is-96x96">
+        <img class="" src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" />
+      </figure>
+      <span class="degrees is-size-4 has-text-white">{{weather.main.temp|convertToCelsius }} &deg;C</span>
+    </div>
+    <div>
+      <p class="has-text-white is-italic is-size-5">{{weather.weather[0].description}}</p>
+    </div>
+  </div>
+</div>
+<div class="search columns">
+  <div class="column"></div>
+  <div class="column">
+    <label class="label has-text-white is-size-5">Enter Name of a City:</label>
+    <app-search></app-search>
+  </div>
+  <div class="column"></div>
+</div>

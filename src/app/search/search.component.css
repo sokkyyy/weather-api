@@ -1,0 +1,23 @@
+.weatherIcon{
+  display: flex;
+  justify-content: center;
+}
+.degrees {
+  padding-top: 20px;
+}
+.searchResults {
+  margin-top:20px;
+}
+.inputSearch{
+  margin-left: 10px;
+}
+.mainForm{
+  font-family: 'Odibee Sans', cursive;
+
+}
+
+@media only screen and (orientation:portrait){
+  .inputSearch{
+    width: 80%;
+  }
+}

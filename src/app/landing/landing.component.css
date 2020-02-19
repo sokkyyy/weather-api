@@ -1,0 +1,19 @@
+.weatherIcon{
+  display: flex;
+  justify-content: center;
+}
+.degrees {
+  padding-top: 20px;
+}
+.mainPage{
+  padding-top: 70px;
+  font-family: 'Odibee Sans', cursive;
+}
+.search {
+  margin-top: 30px;
+}
+.label {
+  margin-left: 10px;
+  font-family: 'Odibee Sans', cursive;
+
+}

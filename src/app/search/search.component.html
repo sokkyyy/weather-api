@@ -1,0 +1,22 @@
+<div class="mainForm">
+<form #search='ngForm'>
+  <input (keyup)="searchWeather()"  [(ngModel)]='city' name="city" class="inputSearch input is-small" type="text" placeholder="Name of a City">
+</form>
+
+<div *ngIf="searchResults">
+  <div class="searchResults columns">
+    <div class="column has-text-centered">
+      <p class="is-size-4 has-text-white">{{searchResults.name}}</p>
+      <div class="weatherIcon">
+        <figure class="image is-64x64">
+          <img class="" src="http://openweathermap.org/img/w/{{searchResults.weather[0].icon}}.png" />
+        </figure>
+        <span class="degrees is-size-6 has-text-white">{{searchResults.main.temp|convertToCelsius }} &deg;C</span>
+      </div>
+      <div>
+        <p class="has-text-white is-italic is-size-6">{{searchResults.weather[0].description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
