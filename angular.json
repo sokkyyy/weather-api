@@ -25,7 +25,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bulma/css/bulma.css",
+              "node_modules/bulma/css/bulma.css"
             ],
             "scripts": []
           },
@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "api"
+    }
+  },
+  "defaultProject": "api",
+  "cli": {
+    "analytics": "b7fce816-06af-4939-bc24-b71652e1dd3a"
+  }
 }
