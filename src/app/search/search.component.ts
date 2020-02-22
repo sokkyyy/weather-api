@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit {
   constructor(weatherService:WeatherService, private http:HttpClient) {}
 
   searchWeather(){
-    const url = `${environment.apiUrl} + ${this.city} + ${environment.apiKey}`;
+    const url = `${environment.apiUrl}${this.city}${environment.apiKey}`;
     this.http.get(url).subscribe(response => {
       this.searchResults = response;
       console.log(response);

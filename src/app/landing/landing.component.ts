@@ -16,7 +16,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(){
-    const url = `${environment.apiUrl} + Nairobi + ${environment.apiKey}`;
+    const url = `${environment.apiUrl}Nairobi${environment.apiKey}`;
     this.http.get(url).subscribe(response => {
       this.weather = response;
       console.log(response);
